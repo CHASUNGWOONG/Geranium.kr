@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Botanical Geranium Theme - Warm cream + Deep green + Coral pink */
+    --background: 40 33% 96%;
+    --foreground: 150 25% 15%;
+    --card: 40 30% 98%;
+    --card-foreground: 150 25% 15%;
+    --popover: 40 30% 98%;
+    --popover-foreground: 150 25% 15%;
+    --primary: 152 35% 28%;
+    --primary-foreground: 40 33% 96%;
+    --secondary: 35 30% 92%;
+    --secondary-foreground: 150 25% 15%;
+    --muted: 35 20% 93%;
+    --muted-foreground: 150 10% 45%;
+    --accent: 4 60% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 152 35% 28%;
+    --chart-1: 4 60% 58%;
+    --chart-2: 152 35% 28%;
+    --chart-3: 35 40% 60%;
+    --chart-4: 340 45% 55%;
+    --chart-5: 80 30% 50%;
+    --radius: 0.5rem;
+    --sidebar-background: 40 30% 97%;
+    --sidebar-foreground: 150 25% 15%;
+    --sidebar-primary: 152 35% 28%;
+    --sidebar-primary-foreground: 40 33% 96%;
+    --sidebar-accent: 35 30% 92%;
+    --sidebar-accent-foreground: 150 25% 15%;
+    --sidebar-border: 35 20% 88%;
+    --sidebar-ring: 152 35% 28%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
