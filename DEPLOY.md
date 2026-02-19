@@ -1,5 +1,36 @@
 # Geranium 배포 가이드
 
+## GitHub에 올리기 (https://github.com/CHASUNGWOONG/Geranium.kr)
+
+이미 이 저장소에 연결되어 있습니다. **코드 수정 후 GitHub에 반영**하려면:
+
+```powershell
+cd C:\CursorStudy\Geranium
+
+# 1. 변경된 파일 확인
+git status
+
+# 2. 올릴 파일 추가 (전체: . 은 모든 변경)
+git add .
+
+# 3. 커밋 (메시지는 수정 내용에 맞게)
+git commit -m "예: Vercel 배포 설정 추가"
+
+# 4. GitHub에 푸시
+git push origin main
+```
+
+**처음 연결이 안 되어 있다면** (다른 PC에서 클론한 경우 등):
+
+```powershell
+cd C:\CursorStudy\Geranium
+git remote add origin https://github.com/CHASUNGWOONG/Geranium.kr.git
+git branch -M main
+git push -u origin main
+```
+
+---
+
 ## 1. Git 사용자 설정 (최초 1회)
 
 GitHub 계정에 사용하는 이메일과 이름을 설정하세요.
